@@ -11,3 +11,6 @@ while cap.isOpened():
         break
 cap.release()
 cv2.destroyAllWindows()
+
+
+print('This is my new camera')
