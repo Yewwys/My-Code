@@ -35,7 +35,7 @@ while True:
                 y = startY - 15 if startY-15>15 else startY+15
                 cv2.putText(frame,label,(startX+20,y+5),cv2.FONT_HERSHEY_DUPLEX,0.6,(255,255,255),1)
 
-        cv2.imshow("Supra",frame)
+        cv2.imshow("Output",frame)
         if cv2.waitKey(10) & 0xFF==ord('q'):
             break
     else:

@@ -1,7 +1,14 @@
-param_grid = {
-    "n_estimators":[3,10,30],
-    "max_features":[2,4,6,8]
-}
+import cv2
 
-print(param_grid['n_estimators'][::2])
-print(param_grid['max_features'][1::2])
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret,frame = cap.read()
+    if ret == True:
+        cv2.imshow('Frame',frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    else:
+        break
+cap.release()
+cv2.destroyAllWindows()
