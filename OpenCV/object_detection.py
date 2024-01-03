@@ -8,7 +8,7 @@ CLASSES = ["BACKGROUND", "AEROPLANE", "BICYCLE", "BIRD", "BOAT",
 	"SOFA", "TRAIN", "TVMONITOR"]
 border_colors = np.random.uniform(0,100,size=(len(CLASSES), 3))
 
-net = cv2.dnn.readNetFromCaffe("./MobileNetSSD/MobileNetSSD.prototxt","./MobileNetSSD/MobileNetSSD.caffemodel")
+net = cv2.dnn.readNetFromCaffe("OpenCV/MobileNetSSD/MobileNetSSD.prototxt","OpenCV/MobileNetSSD/MobileNetSSD.caffemodel")
 
 #cap = cv2.VideoCapture("MobileNetSSD/Supra MK4 short edit.mp4")  #video1
 #cap = cv2.VideoCapture("MobileNetSSD/BostonRobotics.mp4")        #video2
