@@ -1,5 +1,6 @@
-i = 10
+lst = [1,2,3,4]
 
-while i>=1:
-    print('Yewwys')
-    i -=1
+print(lst)
+
+lst.remove(1)
+print(lst)
